@@ -13,4 +13,39 @@ public class Student {
     private long universityRollNumber;
     private int numberOfBooks;
     private Book[] books;
+
+    public String getNameOfStudent() {
+        return firstNameOfStudent + secondNameOfStudent + thirdNameOfStudent;
+    }
+
+    public long getUniversityRollNumber() {
+        return universityRollNumber;
+    }
+
+    public int getNumberOfBooks() {
+        return numberOfBooks;
+    }
+
+    public Book[] getBooks() {
+        return books.clone();
+    }
+
+    public void setNameOfStudent(String firstNameOfStudent, String secondNameOfStudent,
+                                 String thirdNameOfStudent) {
+        this.firstNameOfStudent = firstNameOfStudent;
+        this.secondNameOfStudent = secondNameOfStudent;
+        this.thirdNameOfStudent = thirdNameOfStudent;
+    }
+
+    public void setNumberOfBooks(int numberOfBooks) {
+        this.numberOfBooks = numberOfBooks;
+    }
+
+    public void setUniversityRollNumber(long universityRollNumber) {
+        this.universityRollNumber = universityRollNumber;
+    }
+
+    public void setBooks(Book[] books) {
+        this.books = books;
+    }
 }
