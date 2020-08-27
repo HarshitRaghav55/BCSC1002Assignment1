@@ -17,20 +17,20 @@ public class Book {
         return authorName;
     }
 
-    public String getBookName() {
-        return bookName;
-    }
-
-    public String getISBNNumber() {
-        return ISBNNumber;
-    }
-
     public void setAuthorName(String authorName) {
         this.authorName = authorName;
     }
 
+    public String getBookName() {
+        return bookName;
+    }
+
     public void setBookName(String bookName) {
         this.bookName = bookName;
+    }
+
+    public String getISBNNumber() {
+        return ISBNNumber;
     }
 
     public void setISBNNumber(String ISBNNumber) {
@@ -50,5 +50,13 @@ public class Book {
     @Override
     public int hashCode() {
         return Objects.hash(getBookName(), getAuthorName(), getISBNNumber());
+    }
+
+    @Override
+    public String toString() {
+        return "About Book : " +
+                "bookName : " + bookName +
+                ", authorName :" + authorName +
+                ", ISBNNumber : " + ISBNNumber ;
     }
 }
