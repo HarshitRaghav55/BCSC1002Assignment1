@@ -1,7 +1,7 @@
 /*  Created by IntelliJ IDEA.
- *  User: Divyansh Bhardwaj (dbc2201)
- *  Date: 21/08/20
- *  Time: 3:49 PM
+ *  User: Harshit Raghav (HarshitRaghav55)
+ *  Date: 22/08/20
+ *  Time: 2:00 PM
  *  File Name : Book.java
  * */
 package definitions;
@@ -12,6 +12,23 @@ public class Book {
     private String bookName;
     private String authorName;
     private String ISBNNumber;
+
+    public Book() {
+        authorName = "Enid Blyton";
+        bookName = "Five On A Treasure Island";
+        ISBNNumber = "0340889454754";
+    }
+
+    public Book(String authorName, String bookName, String ISBNNumber) {
+        this.bookName = bookName;
+        this.authorName = authorName;
+        this.ISBNNumber = ISBNNumber;
+    }
+
+    public Book(String bookName, String ISBNNumber) {
+        this.bookName = bookName;
+        this.ISBNNumber = ISBNNumber;
+    }
 
     public String getAuthorName() {
         return authorName;
@@ -57,6 +74,6 @@ public class Book {
         return "About Book : " +
                 "bookName : " + bookName +
                 ", authorName :" + authorName +
-                ", ISBNNumber : " + ISBNNumber ;
+                ", ISBNNumber : " + ISBNNumber;
     }
 }
