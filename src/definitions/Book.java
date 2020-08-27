@@ -9,5 +9,17 @@ package definitions;
 public class Book {
     private String bookName;
     private String authorName;
-    private String isbnNumber;
+    private String ISBNNumber;
+
+    public String getAuthorName() {
+        return authorName;
+    }
+
+    public String getBookName() {
+        return bookName;
+    }
+
+    public String getISBNNumber() {
+        return ISBNNumber;
+    }
 }
