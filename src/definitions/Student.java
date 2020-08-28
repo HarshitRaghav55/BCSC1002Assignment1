@@ -77,10 +77,10 @@ public class Student {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Student student = (Student) o;
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
+        Student student = (Student) object;
         return getUniversityRollNumber() == student.getUniversityRollNumber() &&
                 getNumberOfBooks() == student.getNumberOfBooks() &&
                 Objects.equals(getNameOfStudent(), student.getNameOfStudent()) &&
@@ -99,14 +99,10 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "nameOfStudent='" + nameOfStudent + '\'' +
-                ", firstNameOfStudent='" + firstNameOfStudent + '\'' +
-                ", middleNameOfStudent='" + middleNameOfStudent + '\'' +
-                ", lastNameOfStudent='" + lastNameOfStudent + '\'' +
-                ", universityRollNumber=" + universityRollNumber +
-                ", numberOfBooks=" + numberOfBooks +
-                ", books=" + Arrays.toString(books) +
-                '}';
+        return "Student : " +
+                "Name of Student : " + nameOfStudent +
+                "  University Roll Number : " + universityRollNumber +
+                "  NumberOfBooks=" + numberOfBooks +
+                " \n Books" + Arrays.toString(books);
     }
 }
