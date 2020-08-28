@@ -16,19 +16,29 @@ public class FrontDesk {
         Student student = new Student();
         System.out.println("Enter your Details Student :");
         Scanner scannerObject = new Scanner(System.in);
-        System.out.println("Name of the student : ");
+        System.out.print("Name of the student : ");
         student.setNameOfStudent(scannerObject.nextLine());
-        System.out.println("University roll number of the student : ");
+        System.out.print("University roll number of the student : ");
         student.setUniversityRollNumber(scannerObject.nextLong());
-        System.out.println("Number of books issued by the student");
+        System.out.print("Number of books issued by the student : ");
         int numberOfBooks = scannerObject.nextInt();
         student.setNumberOfBooks(numberOfBooks);
-        System.out.println("Names of the books issued by the student : ");
+        System.out.print("Names of the books issued by the student :\n ");
         Book[] books = new Book[numberOfBooks];
+        scannerObject.nextLine();
         for (int i = 0; i < books.length; i++) {
-            books[i] = new Book();
             System.out.println("Name of book " + (i + 1));
-            books[i].setBookName(scannerObject.nextLine());
+            books[i] = new Book(scannerObject.nextLine());
         }
+        student.setBooks(books);
+        System.out.println("Student Details :");
+        System.out.print("Name of the student : " + student.getNameOfStudent());
+        System.out.print("University roll number of the student : " +
+                student.getUniversityRollNumber());
+        System.out.print("Number of books issued by the student : "
+                + student.getNumberOfBooks());
+        System.out.print("Names of the books issued by the student :\n "
+                + student.getBooks());
+
     }
 }

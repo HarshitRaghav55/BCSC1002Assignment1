@@ -19,6 +19,10 @@ public class Book {
         ISBNNumber = "0340889454754";
     }
 
+    public Book(String bookName) {
+        this.bookName = bookName;
+    }
+
     public Book(String authorName, String bookName, String ISBNNumber) {
         this.bookName = bookName;
         this.authorName = authorName;
