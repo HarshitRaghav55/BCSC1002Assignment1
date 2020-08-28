@@ -10,7 +10,7 @@ public class Library {
     private Book[] booksCurrentlyAvailable;
 
     public Book[] getBooksCurrentlyAvailable() {
-        return booksCurrentlyAvailable;
+        return booksCurrentlyAvailable.clone();
     }
 
     public void setBooksCurrentlyAvailable(Book[] booksCurrentlyAvailable) {
