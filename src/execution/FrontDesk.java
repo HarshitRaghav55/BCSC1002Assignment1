@@ -37,8 +37,8 @@ public class FrontDesk {
                 student.getUniversityRollNumber());
         System.out.println("Number of books issued by the student : "
                 + student.getNumberOfBooks());
-        System.out.print("Names of the books issued by the student :\n "
-                + student.getBooks());
+        System.out.print("Names of the books issued by the student :\n ");
+        student.getNameOfBooks();
 
     }
 }

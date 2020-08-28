@@ -98,6 +98,12 @@ public class Student {
                 + this.lastNameOfStudent;
     }
 
+    public void getNameOfBooks() {
+        for (Book book : books) {
+            System.out.println(book.getBookName());
+        }
+    }
+
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;
