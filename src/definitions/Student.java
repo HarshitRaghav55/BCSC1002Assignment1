@@ -21,12 +21,23 @@ public class Student {
     public Student(){
         nameOfStudent = "Harshit Raghav";
         universityRollNumber = 191500329;
-        numberOfBooks = 1;
+        numberOfBooks = 2;
+        books = new Book[2];
+        for (int i = 0; i < books.length; i++) {
+            books[i] = new Book("Author" + (i+1),"Book" + (i+1),
+                    "98675432122" + (i+5));
+        }
     }
     public Student(String nameOfStudent,long universityRollNumber,int numberOfBooks){
         this.nameOfStudent = nameOfStudent;
         this.universityRollNumber = universityRollNumber;
         this.numberOfBooks = numberOfBooks;
+        this.numberOfBooks = 2;
+        books = new Book[2];
+        for (int i = 0; i < books.length; i++) {
+            books[i] = new Book("Author" + (i+1),"Book" + (i+1),
+                    "98675432122" + (i+5));
+        }
     }
     public String getNameOfStudent() {
         return nameOfStudent;
