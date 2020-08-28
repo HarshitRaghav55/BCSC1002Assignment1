@@ -18,27 +18,38 @@ public class Student {
     private int numberOfBooks;
     private Book[] books;
 
-    public Student(){
+    public Student() {
         nameOfStudent = "Harshit Raghav";
         universityRollNumber = 191500329;
         numberOfBooks = 2;
         books = new Book[2];
         for (int i = 0; i < books.length; i++) {
-            books[i] = new Book("Author" + (i+1),"Book" + (i+1),
-                    "98675432122" + (i+5));
+            books[i] = new Book("Author" + (i + 1), "Book" + (i + 1),
+                    "98675432122" + (i + 5));
         }
     }
-    public Student(String nameOfStudent,long universityRollNumber,int numberOfBooks){
+
+    public Student(String nameOfStudent, long universityRollNumber, int numberOfBooks) {
         this.nameOfStudent = nameOfStudent;
         this.universityRollNumber = universityRollNumber;
         this.numberOfBooks = numberOfBooks;
         this.numberOfBooks = 2;
         books = new Book[2];
         for (int i = 0; i < books.length; i++) {
-            books[i] = new Book("Author" + (i+1),"Book" + (i+1),
-                    "98675432122" + (i+5));
+            books[i] = new Book("Author" + (i + 1), "Book" + (i + 1),
+                    "98675432122" + (i + 5));
         }
     }
+
+    public Student(String nameOfStudent, long universityRollNumber,
+                   int numberOfBooks, Book[] books) {
+        this.nameOfStudent = nameOfStudent;
+        this.universityRollNumber = universityRollNumber;
+        this.numberOfBooks = numberOfBooks;
+        this.numberOfBooks = 2;
+        this.books = books;
+    }
+
     public String getNameOfStudent() {
         return nameOfStudent;
     }
