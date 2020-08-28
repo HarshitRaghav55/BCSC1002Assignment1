@@ -8,4 +8,8 @@ package definitions;
 
 public class Library {
     private Book[] booksCurrentlyAvailable;
+
+    public Book[] getBooksCurrentlyAvailable() {
+        return booksCurrentlyAvailable;
+    }
 }
