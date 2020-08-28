@@ -32,10 +32,10 @@ public class FrontDesk {
         }
         student.setBooks(books);
         System.out.println("Student Details :");
-        System.out.print("Name of the student : " + student.getNameOfStudent());
-        System.out.print("University roll number of the student : " +
+        System.out.println("Name of the student : " + student.getNameOfStudent());
+        System.out.println("University roll number of the student : " +
                 student.getUniversityRollNumber());
-        System.out.print("Number of books issued by the student : "
+        System.out.println("Number of books issued by the student : "
                 + student.getNumberOfBooks());
         System.out.print("Names of the books issued by the student :\n "
                 + student.getBooks());
