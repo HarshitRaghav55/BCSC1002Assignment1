@@ -61,17 +61,17 @@ public class Student {
         this.books = books;
     }
 
-    public void setNameOfStudent(String firstNameOfStudent, String secondNameOfStudent) {
+    public void setNameOfStudent(String firstNameOfStudent, String lastNameOfStudent) {
         this.firstNameOfStudent = firstNameOfStudent;
-        this.middleNameOfStudent = secondNameOfStudent;
-        nameOfStudent = this.firstNameOfStudent + this.middleNameOfStudent;
+        this.lastNameOfStudent = lastNameOfStudent;
+        nameOfStudent = this.firstNameOfStudent + this.lastNameOfStudent;
     }
 
-    public void setNameOfStudent(String firstNameOfStudent, String secondNameOfStudent,
-                                 String thirdNameOfStudent) {
+    public void setNameOfStudent(String firstNameOfStudent, String middleNameOfStudent,
+                                 String lastNameOfStudent) {
         this.firstNameOfStudent = firstNameOfStudent;
-        this.middleNameOfStudent = secondNameOfStudent;
-        this.lastNameOfStudent = thirdNameOfStudent;
+        this.middleNameOfStudent = middleNameOfStudent;
+        this.lastNameOfStudent = lastNameOfStudent;
         nameOfStudent = this.firstNameOfStudent + this.middleNameOfStudent
                 + this.lastNameOfStudent;
     }
