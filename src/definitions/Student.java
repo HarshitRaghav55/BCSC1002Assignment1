@@ -20,7 +20,7 @@ public class Student {
 
     public Student() {
         nameOfStudent = "Harshit Raghav";
-        universityRollNumber = 191500329;
+        universityRollNumber = 191500329l;
         numberOfBooks = 2;
         books = new Book[2];
         for (int i = 0; i < books.length; i++) {
