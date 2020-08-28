@@ -18,8 +18,18 @@ public class Student {
     private int numberOfBooks;
     private Book[] books;
 
+    public Student(){
+        nameOfStudent = "Harshit Raghav";
+        universityRollNumber = 191500329;
+        numberOfBooks = 1;
+    }
+    public Student(String nameOfStudent,long universityRollNumber,int numberOfBooks){
+        this.nameOfStudent = nameOfStudent;
+        this.universityRollNumber = universityRollNumber;
+        this.numberOfBooks = numberOfBooks;
+    }
     public String getNameOfStudent() {
-        return firstNameOfStudent + middleNameOfStudent + lastNameOfStudent;
+        return nameOfStudent;
     }
 
     public void setNameOfStudent(String firstNameOfStudent) {
