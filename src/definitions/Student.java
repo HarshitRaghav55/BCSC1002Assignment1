@@ -22,11 +22,6 @@ public class Student {
         nameOfStudent = "Harshit Raghav";
         universityRollNumber = 191500329l;
         numberOfBooks = 2;
-        books = new Book[2];
-        for (int i = 0; i < books.length; i++) {
-            books[i] = new Book("Author" + (i + 1), "Book" + (i + 1),
-                    "98675432122" + (i + 5));
-        }
     }
 
     public Student(String nameOfStudent, long universityRollNumber, int numberOfBooks) {
