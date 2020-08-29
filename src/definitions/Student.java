@@ -74,7 +74,10 @@ public class Student {
     }
 
     public void setBooks(Book[] books) {
-        this.books = books;
+        for (int i = 0; i < books.length; i++) {
+            this.books[i] = new Book();
+            this.books[i] = books[i];
+        }
     }
 
     public void setNameOfStudent(String firstNameOfStudent, String lastNameOfStudent) {
