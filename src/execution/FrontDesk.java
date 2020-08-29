@@ -12,6 +12,11 @@ import definitions.Student;
 import java.util.Scanner;
 
 public class FrontDesk {
+    public static final int ISSUE_NEW_BOOK = 1;
+    public static final int RETURN_PREVIOUSLY_ISSUES = 2;
+    public static final int SHOW_ALL_ISSUES = 3;
+    public static final int EXIT = 4;
+
     public static void main(String[] args) {
         Student student = new Student();
         System.out.println("Enter your Details Student :");
