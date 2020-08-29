@@ -122,9 +122,9 @@ public class Student {
     public String toString() {
         return "Student : " +
                 "Name of Student : " + nameOfStudent +
-                "  University Roll Number : " + universityRollNumber +
-                "  NumberOfBooks=" + numberOfBooks +
-                " \n Books" + Arrays.toString(books);
+                " University Roll Number : " + universityRollNumber +
+                "NumberOfBooks=" + numberOfBooks +
+                "\nBooks" + Arrays.toString(books);
     }
 
     public void displayNameOfBooks() {
