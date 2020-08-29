@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class Library {
     private final int MAX_BOOKS = 100;
     private final Book[] booksCurrentlyAvailable = new Book[MAX_BOOKS];
-    private final int numberOfBooks;
+    private int numberOfBooks;
 
     public Library() {
         booksCurrentlyAvailable[0] = new Book();
