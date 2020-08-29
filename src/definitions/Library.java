@@ -66,8 +66,6 @@ public class Library {
                 booksCurrentlyAvailable[i].setAuthorName("Author");
                 booksCurrentlyAvailable[i].setISBNNumber("100000000000");
                 break;
-            } else {
-                System.out.println("false");
             }
         }
     }
