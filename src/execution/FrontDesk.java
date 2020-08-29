@@ -79,10 +79,8 @@ public class FrontDesk {
                     Book returnBook = new Book();
                     System.out.println("Book name : ");
                     returnBook.setBookName(scannerObject.nextLine());
-                    System.out.println("Author name : ");
-                    returnBook.setAuthorName(scannerObject.nextLine());
-                    System.out.println("ISBN number : ");
-                    returnBook.setISBNNumber(scannerObject.nextLine());
+                    student.returnBook(returnBook);
+                    System.out.println("Book Returned!!!");
                     break;
                 case SHOW_ALL_ISSUES:
                     student.displayNameOfBooks();
