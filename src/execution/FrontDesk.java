@@ -80,6 +80,7 @@ public class FrontDesk {
                     System.out.println("Book name : ");
                     returnBook.setBookName(scannerObject.nextLine());
                     student.returnBook(returnBook);
+                    library.bookReturned(returnBook);
                     System.out.println("Book Returned!!!");
                     break;
                 case SHOW_ALL_ISSUES:
