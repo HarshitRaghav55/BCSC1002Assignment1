@@ -10,6 +10,7 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Student {
+    private final int MAX_BOOKS = 100;
     private String nameOfStudent;
     private String firstNameOfStudent;
     private String middleNameOfStudent;
@@ -28,9 +29,7 @@ public class Student {
         this.nameOfStudent = nameOfStudent;
         this.universityRollNumber = universityRollNumber;
         this.numberOfBooks = numberOfBooks;
-        this.numberOfBooks = 2;
-        books = new Book[2];
-        for (int i = 0; i < books.length; i++) {
+        for (int i = 0; i < numberOfBooks; i++) {
             books[i] = new Book("Author" + (i + 1), "Book" + (i + 1),
                     "98675432122" + (i + 5));
         }
