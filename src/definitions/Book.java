@@ -81,9 +81,8 @@ public class Book {
 
     @Override
     public String toString() {
-        return "About Book : " +
-                "bookName : " + bookName +
-                ", authorName :" + authorName +
-                ", ISBNNumber : " + ISBNNumber;
+        return "Book Name : " + bookName +
+                ", Author Name :" + authorName +
+                ", ISBN Number : " + ISBNNumber;
     }
 }
