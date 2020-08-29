@@ -1,7 +1,7 @@
 /*  Created by IntelliJ IDEA.
  *  User: Harshit Raghav (HarshitRaghav55)
- *  Date: 22/08/20
- *  Time: 2:00 PM
+ *  Date: 21/08/20
+ *  Time: 3:50 PM
  *  File Name : Book.java
  * */
 package definitions;
@@ -57,7 +57,6 @@ public class Book {
     public void setISBNNumber(String ISBNNumber) {
         this.ISBNNumber = ISBNNumber;
     }
-
 
 
     @Override
