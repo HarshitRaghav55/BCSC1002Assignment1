@@ -43,7 +43,7 @@ public class FrontDesk {
         System.out.println("Number of books issued by the student : "
                 + student.getNumberOfBooks());
         System.out.print("Names of the books issued by the student :\n ");
-        student.getNameOfBooks();
+        student.displayNameOfBooks();
         int choice;
         do {
             System.out.println("-=-=--=-=-\"Welcome To The Front Desk\"-=-=--=-=-\n" +
@@ -53,9 +53,19 @@ public class FrontDesk {
                     "3. Show me all my issues books.\n" +
                     "4. Exit.\n");
             choice = scannerObject.nextInt();
+            scannerObject.nextLine();
             switch (choice) {
                 case ISSUE_NEW_BOOK:
-                    System.out.println();
+                    Book newBook = new Book();
+                    System.out.println("Enter the details of the Book");
+                    System.out.print("Enter the Book name : ");
+                    newBook.setBookName(scannerObject.nextLine());
+                    System.out.print("Enter the Author name : ");
+                    newBook.setAuthorName(scannerObject.nextLine());
+                    System.out.print("Enter the ISBN number : ");
+                    newBook.setISBNNumber(scannerObject.nextLine());
+                    student.addNewBook(newBook);
+                    System.out.println("Book Issued!!!!");
                     break;
                 case RETURN_PREVIOUSLY_ISSUES:
                     System.out.println();
