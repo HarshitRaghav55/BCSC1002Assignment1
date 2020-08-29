@@ -101,6 +101,12 @@ public class Student {
         }
     }
 
+    public void addNewBook(Book book) {
+        this.numberOfBooks = this.numberOfBooks + 1;
+        books[numberOfBooks - 1] = new Book();
+        books[numberOfBooks - 1].addBook(book);
+    }
+
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;
