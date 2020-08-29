@@ -59,6 +59,9 @@ public class FrontDesk {
             scannerObject.nextLine();
             switch (choice) {
                 case ISSUE_NEW_BOOK:
+                    System.out.println("Books that are currently available " +
+                            "with their details");
+                    library.displayBooksCurrentlyAvailable();
                     Book newBook = new Book();
                     System.out.println("Enter the details of the Book");
                     System.out.print("Enter the Book name : ");
@@ -69,6 +72,7 @@ public class FrontDesk {
                     newBook.setISBNNumber(scannerObject.nextLine());
                     student.addNewBook(newBook);
                     System.out.println("Book Issued!!!!");
+                    library.checkoutBook(newBook);
                     break;
                 case RETURN_PREVIOUSLY_ISSUES:
                     System.out.println();
