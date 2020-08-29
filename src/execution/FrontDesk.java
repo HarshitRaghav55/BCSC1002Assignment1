@@ -75,7 +75,14 @@ public class FrontDesk {
                     library.checkoutBook(newBook);
                     break;
                 case RETURN_PREVIOUSLY_ISSUES:
-                    System.out.println();
+                    System.out.println("Enter the Book details you want to return :");
+                    Book returnBook = new Book();
+                    System.out.println("Book name : ");
+                    returnBook.setBookName(scannerObject.nextLine());
+                    System.out.println("Author name : ");
+                    returnBook.setAuthorName(scannerObject.nextLine());
+                    System.out.println("ISBN number : ");
+                    returnBook.setISBNNumber(scannerObject.nextLine());
                     break;
                 case SHOW_ALL_ISSUES:
                     student.displayNameOfBooks();
