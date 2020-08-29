@@ -78,7 +78,7 @@ public class FrontDesk {
                     System.out.println();
                     break;
                 case SHOW_ALL_ISSUES:
-                    System.out.println();
+                    student.displayNameOfBooks();
                     break;
                 case EXIT:
                     System.out.println("Bye!!!\n Have a good day!!!");
