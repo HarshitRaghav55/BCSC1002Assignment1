@@ -138,4 +138,13 @@ public class Student {
         books[numberOfBooks - 1] = new Book();
         books[numberOfBooks - 1].addBook(book);
     }
+
+    public void returnBook(Book book) {
+        for (int i = 0; i < numberOfBooks; i++) {
+            if (books[i].getBookName().equals(book.getBookName())) {
+                books[i].setBookName("Book returned");
+                break;
+            }
+        }
+    }
 }
