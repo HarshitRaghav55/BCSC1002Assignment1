@@ -90,7 +90,7 @@ public class FrontDesk {
                     System.out.println("Bye!!!\n Have a good day!!!");
                     continue;
                 default:
-                    System.out.println("Wrong Choice");
+                    System.out.println("Wrong Choice!!!");
                     break;
             }
         } while (choice != EXIT);
