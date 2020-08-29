@@ -14,9 +14,9 @@ public class Book {
     private String ISBNNumber;
 
     public Book() {
-        authorName = "Enid Blyton";
-        bookName = "Five On A Treasure Island";
-        ISBNNumber = "0340889454754";
+        authorName = "Author1";
+        bookName = "Book1";
+        ISBNNumber = "100000054754";
     }
 
     public Book(String bookName) {
