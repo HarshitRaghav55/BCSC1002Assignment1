@@ -95,9 +95,9 @@ public class Student {
                 + this.lastNameOfStudent;
     }
 
-    public void getNameOfBooks() {
-        for (Book book : books) {
-            System.out.println(book.getBookName());
+    public void displayNameOfBooks() {
+        for (int i = 0; i < numberOfBooks; i++) {
+            System.out.println("Book" + (i + 1) + " : " + books[i].getBookName());
         }
     }
 
