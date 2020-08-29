@@ -45,8 +45,11 @@ public class Library {
         return booksCurrentlyAvailable.clone();
     }
 
-    public void setBooksCurrentlyAvailable(Book[] booksCurrentlyAvailable) {
-        this.booksCurrentlyAvailable = booksCurrentlyAvailable;
+    public void setBooksCurrentlyAvailable(Book[] books) {
+        for (int i = 0; i < books.length; i++) {
+            this.booksCurrentlyAvailable[i] = new Book();
+            this.booksCurrentlyAvailable[i] = books[i];
+        }
     }
 
     @Override
