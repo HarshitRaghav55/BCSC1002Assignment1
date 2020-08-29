@@ -73,6 +73,9 @@ public class FrontDesk {
                 case SHOW_ALL_ISSUES:
                     System.out.println();
                     break;
+                case EXIT:
+                    System.out.println("Bye!!!\n Have a good day!!!");
+                    continue;
                 default:
                     System.out.println("Wrong Choice");
                     break;
