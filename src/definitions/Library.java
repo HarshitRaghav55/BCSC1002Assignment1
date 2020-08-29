@@ -90,4 +90,10 @@ public class Library {
             }
         }
     }
+
+    public void bookReturned(Book book) {
+        this.numberOfBooks = this.numberOfBooks + 1;
+        booksCurrentlyAvailable[numberOfBooks - 1] = new Book();
+        booksCurrentlyAvailable[numberOfBooks - 1].addBook(book);
+    }
 }
