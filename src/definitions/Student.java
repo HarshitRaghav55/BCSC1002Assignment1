@@ -17,7 +17,7 @@ public class Student {
     private String lastNameOfStudent;
     private long universityRollNumber;
     private int numberOfBooks;
-    private Book[] books;
+    private Book[] books = new Book[MAX_BOOKS];
 
     public Student() {
         nameOfStudent = "Harshit Raghav";
