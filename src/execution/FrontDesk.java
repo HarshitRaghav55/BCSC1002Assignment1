@@ -44,12 +44,29 @@ public class FrontDesk {
                 + student.getNumberOfBooks());
         System.out.print("Names of the books issued by the student :\n ");
         student.getNameOfBooks();
-        System.out.println("-=-=--=-=-\"Welcome To The Front Desk\"-=-=--=-=-\n" +
-                "How may I help you today?\n" +
-                "1. Issue a new book for me.\n" +
-                "2. Return a previously issues book for me.\n" +
-                "3. Show me all my issues books.\n" +
-                "4. Exit.\n");
-
+        int choice;
+        do {
+            System.out.println("-=-=--=-=-\"Welcome To The Front Desk\"-=-=--=-=-\n" +
+                    "How may I help you today?\n" +
+                    "1. Issue a new book for me.\n" +
+                    "2. Return a previously issues book for me.\n" +
+                    "3. Show me all my issues books.\n" +
+                    "4. Exit.\n");
+            choice = scannerObject.nextInt();
+            switch (choice) {
+                case ISSUE_NEW_BOOK:
+                    System.out.println();
+                    break;
+                case RETURN_PREVIOUSLY_ISSUES:
+                    System.out.println();
+                    break;
+                case SHOW_ALL_ISSUES:
+                    System.out.println();
+                    break;
+                default:
+                    System.out.println("Wrong Choice");
+                    break;
+            }
+        } while (choice != EXIT);
     }
 }
