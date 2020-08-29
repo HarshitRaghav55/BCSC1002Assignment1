@@ -58,11 +58,7 @@ public class Book {
         this.ISBNNumber = ISBNNumber;
     }
 
-    public void addBook(Book book) {
-        this.setBookName(book.getBookName());
-        this.setAuthorName(book.getAuthorName());
-        this.setISBNNumber(book.getISBNNumber());
-    }
+
 
     @Override
     public boolean equals(Object object) {
@@ -84,5 +80,11 @@ public class Book {
         return "Book Name : " + bookName +
                 ", Author Name :" + authorName +
                 ", ISBN Number : " + ISBNNumber;
+    }
+
+    public void addBook(Book book) {
+        this.setBookName(book.getBookName());
+        this.setAuthorName(book.getAuthorName());
+        this.setISBNNumber(book.getISBNNumber());
     }
 }

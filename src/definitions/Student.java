@@ -95,17 +95,7 @@ public class Student {
                 + this.lastNameOfStudent;
     }
 
-    public void displayNameOfBooks() {
-        for (int i = 0; i < numberOfBooks; i++) {
-            System.out.println("Book" + (i + 1) + " : " + books[i].getBookName());
-        }
-    }
 
-    public void addNewBook(Book book) {
-        this.numberOfBooks = this.numberOfBooks + 1;
-        books[numberOfBooks - 1] = new Book();
-        books[numberOfBooks - 1].addBook(book);
-    }
 
     @Override
     public boolean equals(Object object) {
@@ -135,5 +125,17 @@ public class Student {
                 "  University Roll Number : " + universityRollNumber +
                 "  NumberOfBooks=" + numberOfBooks +
                 " \n Books" + Arrays.toString(books);
+    }
+
+    public void displayNameOfBooks() {
+        for (int i = 0; i < numberOfBooks; i++) {
+            System.out.println("Book" + (i + 1) + " : " + books[i].getBookName());
+        }
+    }
+
+    public void addNewBook(Book book) {
+        this.numberOfBooks = this.numberOfBooks + 1;
+        books[numberOfBooks - 1] = new Book();
+        books[numberOfBooks - 1].addBook(book);
     }
 }

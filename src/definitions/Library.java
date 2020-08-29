@@ -52,23 +52,7 @@ public class Library {
         }
     }
 
-    public void displayBooksCurrentlyAvailable() {
-        for (int i = 0; i < this.numberOfBooks; i++) {
-            System.out.println("Book " + (i + 1) + " : ");
-            System.out.println(booksCurrentlyAvailable[i]);
-        }
-    }
 
-    public void checkoutBook(Book checkedOutBook) {
-        for (int i = 0; i < numberOfBooks; i++) {
-            if (booksCurrentlyAvailable[i].equals(checkedOutBook)) {
-                booksCurrentlyAvailable[i].setBookName("Not availabe");
-                booksCurrentlyAvailable[i].setAuthorName("Author");
-                booksCurrentlyAvailable[i].setISBNNumber("100000000000");
-                break;
-            }
-        }
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -87,5 +71,23 @@ public class Library {
     public String toString() {
         return "Library : " +
                 "Books Currently Available : " + Arrays.toString(booksCurrentlyAvailable);
+    }
+
+    public void displayBooksCurrentlyAvailable() {
+        for (int i = 0; i < this.numberOfBooks; i++) {
+            System.out.println("Book " + (i + 1) + " : ");
+            System.out.println(booksCurrentlyAvailable[i]);
+        }
+    }
+
+    public void checkoutBook(Book checkedOutBook) {
+        for (int i = 0; i < numberOfBooks; i++) {
+            if (booksCurrentlyAvailable[i].equals(checkedOutBook)) {
+                booksCurrentlyAvailable[i].setBookName("Not availabe");
+                booksCurrentlyAvailable[i].setAuthorName("Author");
+                booksCurrentlyAvailable[i].setISBNNumber("100000000000");
+                break;
+            }
+        }
     }
 }
