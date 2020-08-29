@@ -52,6 +52,7 @@ public class FrontDesk {
                     "2. Return a previously issues book for me.\n" +
                     "3. Show me all my issues books.\n" +
                     "4. Exit.\n");
+            System.out.println("Your Choice : ");
             choice = scannerObject.nextInt();
             scannerObject.nextLine();
             switch (choice) {
