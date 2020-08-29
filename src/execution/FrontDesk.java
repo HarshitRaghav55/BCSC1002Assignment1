@@ -20,6 +20,7 @@ public class FrontDesk {
 
     public static void main(String[] args) {
         Student student = new Student();
+        Library library = new Library();
         System.out.println("Enter your Details Student :");
         Scanner scannerObject = new Scanner(System.in);
         System.out.print("Name of the student : ");
